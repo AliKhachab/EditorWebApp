@@ -222,7 +222,6 @@ button {
     padding: 25px 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .panel__img {
