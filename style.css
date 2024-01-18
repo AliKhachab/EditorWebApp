@@ -13,10 +13,21 @@ button {
     color: inherit;
     font: inherit;
     outline: none;
-
 }
 
 /* KEYFRAMES */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 @keyframes fade-in-from-top {
     0% {
         opacity: 0;
@@ -143,19 +154,18 @@ button {
 
 .menu__button--active {
     background-color: #2B363B;
-    color: #FFF;
+    color: #fff;
     position: relative;
 }
 
 .menu__button--active::before {
-    content: "";
+    content: '';
     width: 3px;
     height: 100%;
     background-color: #375BB6;
     position: absolute;
     left: 0;
     top: 0;
-
 }
 
 .menu__button:hover {
@@ -206,7 +216,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #4b5155;
+    padding-bottom: 12px;
 }
+
+
 
 .first-heading {
     font-size: 18px;
@@ -222,6 +236,7 @@ button {
     padding: 25px 0;
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
 .panel__img {
@@ -229,15 +244,55 @@ button {
     height: 140px;
     object-fit: cover;
     border-radius: 7px;
+    transition: all 0.2s;
+    animation: fade-in 1s;
 }
 
-.panel__btn {
+.panel__img:nth-child(2) {
+    animation: fade-in 1s 0.1s backwards;
+}
 
+.panel__img:nth-child(3) {
+    animation: fade-in 1s 0.2s backwards;
+}
+
+.panel__img:nth-child(4) {
+    animation: fade-in 1s 0.3s backwards;
+}
+
+.panel__img:nth-child(5) {
+    animation: fade-in 1s 0.4s backwards;
+}
+
+
+.panel__img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+
+.panel__btn {
+    width: 140px;
+    height: 140px;
+    border-radius: 7px;
+    background-color: #333e44;
+    cursor: pointer;
+    transition: all 0.2s;
+    animation: fade-in 1s 0.5s backwards;
+    
+}
+
+.panel__btn:hover, .panel__btn:focus {
+    background-color: #404c52;
 }
 
 .panel__upload-icon {
-
+    font-size: 25px;
+    color: #21292D;
 }
+
+
 
 /* --- */ 
 
@@ -245,6 +300,41 @@ button {
     background-color: #EDF1F3;
     flex: 1;
 }
+
+.info-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #d6dde1;
+}
+
+.breadcrumbs {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+.breadcrumbs__link {
+    color: #A6ADB1;
+    text-decoration: none;
+}
+
+.breadcrumbs__icon {
+    color: #A6ADB1;
+    margin: 0 13px;
+}
+
+.breadcrumbs__name {
+    color: #2e3335;
+}
+
+.button {
+    background-color: royalblue;
+    cursor: pointer;
+
+}
+
+
 
 /* --- */ 
 
