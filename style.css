@@ -352,3 +352,72 @@ button {
 
 /* --- */ 
 
+.artboard {
+    display: flex;
+}
+
+.canvas {
+    height: 57.5vh;
+    width: 48.6vw;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.canvas__bg-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+}
+
+.canvas__fg-img {
+    height: 75%;
+    width: 78%;
+    object-fit: cover;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Note to self: this is the technique to center stuff*/
+    border: 1px solid white;
+}
+
+.canvas__circle {
+
+}
+
+.canvas__circle:nth-of-type(1) {
+
+}
+
+
+.canvas__circle:nth-of-type(2) {
+
+}
+
+
+.canvas__circle:nth-of-type(3) {
+
+}
+
+
+.canvas__circle:nth-of-type(4) {
+
+}
+
+
+
+
+.tools {
+    height: 57.5vh;
+    color: royalblue;
+}
+
+.tool {
+
+}
+
+.tool__icon {
+
+}
