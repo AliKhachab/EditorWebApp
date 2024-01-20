@@ -6,7 +6,7 @@ This is a project I'm working on to learn HTML and CSS and work on self-teaching
 
 ## What the project is for
 
-It's a basic photo-editing web app similar to stuff like Canva. It's basically all frontend stuff to practice HTML and CSS before I move onto stuff like TailwindCSS and React.
+It's a basic photo-editing web app similar to stuff like Canva. It's basically all frontend stuff to practice HTML and CSS before I move onto stuff like TailwindCSS and React. The app isn't supposed to work, though. At least, not right now -- this was more CSS and HTML practice with no intention of making the application actually work, but rather make it look like it was working by learning how to make modified buttons and whatnot, for example.
 
 ## Things I've learned:
 
