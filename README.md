@@ -1,4 +1,4 @@
-# Editor Web App Project
+# Editor Web App CSS Project
 
 ## My first project with HTML and CSS 
 
